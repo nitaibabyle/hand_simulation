@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bitbot>
+  <logger path="./log"/>
+  
+  <backend port="12888" settings_file="./backend.json"/>
+
+  <!-- <mujoco file="./models/lefthand/left_hand.xml"/> -->
+  <mujoco file="./models/doublehand/double_hand.xml"/>
+
+  <bus>
+    <device id="1" type="MujocoJoint" name="l_joint1"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="2" type="MujocoJoint" name="l_joint11"
+            mode="position"  initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />    
+    <device id="3" type="MujocoJoint" name="l_joint2"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />    
+    <device id="4" type="MujocoJoint" name="l_joint22"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />    
+    <device id="5" type="MujocoJoint" name="l_joint3"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="6" type="MujocoJoint" name="l_joint33"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="7" type="MujocoJoint" name="l_joint4"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="8" type="MujocoJoint" name="l_joint44"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="9" type="MujocoJoint" name="l_joint5"
+            mode="position" initial_pos='0'
+            pos_kp='0.01' pos_kd='0.005' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="10" type="MujocoJoint" name="l_joint51"
+            mode="position" initial_pos='0'
+            pos_kp='0.01' pos_kd='0.003' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="11" type="MujocoJoint" name="l_joint52"
+            mode="position" initial_pos='0'
+            pos_kp='0.005' pos_kd='0.0002' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="12" type="MujocoJoint" name="l_joint53"
+            mode="position" initial_pos='0'
+            pos_kp='0.005' pos_kd='0.0002' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+
+
+
+    <device id="21" type="MujocoJoint" name="r_joint1"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="22" type="MujocoJoint" name="r_joint11"
+            mode="position"  initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />    
+    <device id="23" type="MujocoJoint" name="r_joint2"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />    
+    <device id="24" type="MujocoJoint" name="r_joint22"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />    
+    <device id="25" type="MujocoJoint" name="r_joint3"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="26" type="MujocoJoint" name="r_joint33"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="27" type="MujocoJoint" name="r_joint4"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="28" type="MujocoJoint" name="r_joint44"
+            mode="position" initial_pos='0'
+            pos_kp='0.001' pos_kd='0.0001' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="29" type="MujocoJoint" name="r_joint5"
+            mode="position" initial_pos='0'
+            pos_kp='0.01' pos_kd='0.005' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="30" type="MujocoJoint" name="r_joint51"
+            mode="position" initial_pos='0'
+            pos_kp='0.01' pos_kd='0.003' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="31" type="MujocoJoint" name="r_joint52"
+            mode="position" initial_pos='0'
+            pos_kp='0.005' pos_kd='0.0002' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+    <device id="32" type="MujocoJoint" name="r_joint53"
+            mode="position" initial_pos='0'
+            pos_kp='0.005' pos_kd='0.0002' pos_ki='0' vel_kp='0' vel_kd='0'
+    />
+
+  </bus>
+</bitbot>
